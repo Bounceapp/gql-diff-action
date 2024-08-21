@@ -1,13 +1,13 @@
 name: 'GraphQL Diff'
 description: 'A neat summary of the changes you made to your GraphQL schema.'
-branding: 
+branding:
   icon: 'book-open'
   color: 'purple'
 inputs:
   token:
     description: 'GitHub token to post the comment'
     required: true
-  old-schema: 
+  old-schema:
     description: 'Old schema location'
     required: true
   new-schema:
@@ -18,5 +18,6 @@ inputs:
     required: false
     default: '## 🗞 GraphQL Summary'
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'index.js'
+
